@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Formulir Pemetaan Bidang Minat</h1>
+    <p id="description">
+      Formulir ini digunakan untuk memetakan bidang minat yang dimiliki
+      masing-masing mahasiswa Informatika ITK
+    </p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name">Siapakah Kamu ?<input type="text" id="name" /></label>
+        <label for="email"
+          >Apa Alamat Emailmu ?<input type="email" id="email"
+        /></label>
+        <label for="number"
+          >Semester berapakah sekarang kamu ?<input
+            type="number"
+            id="number"
+            max="14"
+            min="1"
+        /></label>
+        <label for="dropdown"
+          >Apa statusmu di perkuliahan<select id="dropdown">
+            <option value="">(Pilih Salah Satu)</option>
+            <option value="1">Mahasiswa Kupu-Kupu</option>
+            <option value="2">Mahasiswa Kura-Kura</option>
+            <option value="3">Mahasiswa Kuker-Kuker</option>
+            <option value="4">Mahasiswa Kunong-Kunong</option>
+          </select></label
+        >
+      </fieldset>
+
+      <fieldset id="jalur-masuk">
+        <legend>Masuk lewat jalur apakah kamu</legend>
+        <label for="snbp"
+          ><input
+            type="radio"
+            id="snbp"
+            class="block"
+            name="jalur-masuk"
+            checked
+          />SNBP</label
+        ><label for="snbt"
+          ><input
+            type="radio"
+            id="snbt"
+            class="block"
+            name="jalur-masuk"
+          />SNBT</label
+        ><label for="mandiri"
+          ><input
+            type="radio"
+            id="mandiri"
+            class="block"
+            name="jalur-masuk"
+          />Mandiri</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <label
+          >Kenapa kamu masuk Informatika<textarea
+            name="motivasi"
+            id="motivasi"
+          ></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Apa bidang minat kamu ?</legend>
+        <label
+          ><input
+            type="checkbox"
+            name="bidang-minat
+          "
+          />Front-End</label
+        ><label><input type="checkbox" name="bidang-minat" />Back-End</label
+        ><label><input type="checkbox" name="bidang-minat" />Mobile</label
+        ><label
+          ><input type="checkbox" name="bidang-minat" />Machine Learning</label
+        ><label
+          ><input type="checkbox" name="bidang-minat" />Data Analiyst</label
+        >
+        <label
+          ><input type="checkbox" name="bidang-minat" />Artificial
+          Inteligence</label
+        ><label
+          ><input type="checkbox" name="bidang-minat" />Game Development</label
+        ><label><input type="checkbox" name="bidang-minat" />UI/UX</label
+        ><label><input type="checkbox" name="bidang-minat" />Networking</label
+        ><label><input type="checkbox" name="bidang-minat" />IOT</label>
+        <label
+          ><input type="checkbox" name="bidang-minat" />Cloud Computing</label
+        ><label><input type="checkbox" name="bidang-minat" />Full-Stack</label>
+      </fieldset>
+      <fieldset>
+        <label
+          >Apa harapanmu setelah lulus dari ITK<textarea name=""></textarea>
+        </label>
+      </fieldset>
+      <button id="submit">Kumpulkan</button>
+    </form>
+  </body>
+</html>
